@@ -54,7 +54,7 @@ footer{
 }
 /*==header style==*/
 header{
-    background: url('../images/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+    background: url('images/wedding-landing-cover.jpg') no-repeat 70% center/cover;
     text-align: center;
     display: table;
     width: 100%;

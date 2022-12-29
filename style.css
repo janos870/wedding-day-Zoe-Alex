@@ -16,7 +16,7 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
-body{
+/* body{
     background-color: rgb(218, 218, 129, .8);
 }
 header{
@@ -48,7 +48,7 @@ header{
 }
 footer{
     background-color: rgb(223, 95, 95, .8);
-}
+} */
 *{
     box-sizing: border-box;
 }
@@ -91,11 +91,13 @@ hr{
     margin-inline: 30%;
 }
 /*==location style==*/
-.location{
+div.location{
     background-image: url('images/wedding-landing-background.png');
-    text-align: center;
     color: #444349;
+    text-align: center;
+    padding-bottom: 2rem;
 }
+
 div.location h2{
     font-family: 'Great Vibes';
     text-align: center;
@@ -109,12 +111,12 @@ div.location h2{
     margin-bottom: 1rem;
 }
 .location p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 .location .ceremony{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .location img{
     margin-bottom: 0.5rem;
@@ -122,6 +124,331 @@ div.location h2{
 .hr-border{
     border-color: #000;
 }
+/*==program style==*/
+.program{
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    padding-bottom: 1rem;
+    text-align: justify;
+    padding-bottom: 2.5rem;
+    
+}
+div.program h2{
+    color: #d2ba87;
+    font-family: 'Great Vibes';
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+.program p{
+   margin-bottom: 1.5rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+ul li{
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+ul{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Muli';
+}
+/*==gifts style==*/
+div.gifts{
+    background-image: url('images/wedding-landing-background.png');
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+div.gifts p{
+    margin: 1.5rem;
+    font-family: 'Muli';
+}
+.gifts h2{
+    font-family: 'Great Vibes';
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+/*==Questions and Answers==*/
+div.questions{
+    background-color: hsla(100,0%,0%,.6);
+    padding-bottom: 2rem;
+    color: #d2ba87;
+    padding-top: 2.5rem;
+}
+section h3{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Libre Baskerville';
+}
+section.cont-1, .cont-2, .cont-3{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
+    font-family: 'Muli';
+}
+div.questions h2{
+    color: #d2ba87;
+    text-align: center;
+    font-family: 'Great Vibes';
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+article.travel-1{
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+article.travel-2 p{
+    margin-top: 0.5rem;
+}
+article.travel-3 p{
+    margin-top: 0.5rem;
+}
+article.food-1{
+    margin-bottom: 0.8rem;
+}
+article.food-1 p{
+    margin-bottom: 0.5rem;
+}
+article.food-2 p{
+    margin-bottom: 0.5rem;
+}
+article.other-1 p{
+    margin-bottom: 0.8rem;
+}
+article.other-2{
+    margin-bottom: 0.5rem;
+}
+article.other-3 p{
+    margin-bottom: 0.5rem;
+}
+section a{
+    text-decoration: none;
+    color: #bd806e;
+}
+section a:hover{
+    color: #eda087;
+}
+.cont-2 h3{
+    border-top: 1px solid;
+    padding: 1rem;
+    margin-inline: 10%;
+}
+.cont-3 h3{
+    border-top: 1px solid;
+    padding: 1rem;
+    margin-inline: 10%;
+}
+/*==contact style==*/
+div.contact{
+    background-image: url('images/wedding-landing-background.png');
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.contact h2{
+    font-family: 'Great Vibes';
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+.contact p{
+    padding: 0.6rem;
+    font-family: 'Muli';
+}
+.contact a{
+    text-decoration: none;
+    color: #bd806e;
+}
+.contact a:hover{
+    color: #eda087;
+}
+/*==footer style==*/
+footer{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: #606060;
+    color: rgb(232, 228, 228);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #bd806e;
+}
+footer a:hover{
+    color: #eda087;
+}
+footer p{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/*= = = madia query tablet view = = =*/
+
+/*==header style==*/
+@media screen and (min-width: 768px){
+    div.center-background{
+        margin-inline: 15%;
+    }
+}
+/*==location style==*/
+@media screen and (min-width: 768px){
+    .hr-border{
+        margin-inline: 40%;
+    }
+}
+/*==program list style==*/
+@media screen and (min-width: 768px){
+   ul{
+    margin-left: 3rem;
+   }
+   .program p{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+   }
+}
+/*== gift style ==*/
+@media screen and (min-width: 768px) {
+    .gifts p{
+        font-size: 1.3rem;
+    }
+}
+/*==Questions and Answers*/
+@media screen and (min-width: 768px){
+    section.cont-1, .cont-2, .cont-3{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .cont-2 h3{
+        border-top: 1px solid;
+        padding: 1rem;
+        margin-inline: 15%;
+    }
+    .cont-3 h3{
+        border-top: 1px solid;
+        padding: 1rem;
+        margin-inline: 15%;
+    }
+    article p{
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+    /* == contact style ==*/
+    .contact p{
+        font-size: 1.2rem;
+    }
+    /*== footer style ==*/
+    footer p{
+        font-size: 1rem;
+    }
+    footer a{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* = = = madia query desktop view = = = */
+
+/*===header style==*/
+@media screen and (min-width: 1200px) {
+    div.center-background{
+        margin-inline: 30%;
+        padding: 1rem;
+    }
+    .wrapper p{
+        font-size: 1.6rem;
+    }
+    .center-background .tagline{
+        font-size: 1.4rem;
+    }
+    .center-background h1{
+        font-size: 6rem;
+    }
+}
+/*==locacion style==*/
+@media screen and (min-width: 1200px) {
+    .hr-border{
+        border: none;
+    }
+    .ceremony-box{
+        display: flex;
+        flex-direction: row;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    div.location h2{
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+    div.location h3{
+        font-size: 1.5rem;
+    }
+    div.ceremony{
+        padding: 4rem;
+    }
+}
+/*== program list style ==*/
+@media screen and (min-width: 1200px) {
+    ul{
+        margin-left: 3rem;
+        font-size: 1.3rem;
+    }
+    .program p{
+        margin-left: 3rem;
+        font-size: 1.8rem;
+    }
+    div.program{
+        text-align: center;
+    }
+}
+/*== gifts style ==*/
+@media screen  and (min-width: 1200px) {
+    .gifts p{
+        font-size: 1.5rem;
+    }
+}
+/*== Questions and Answers ==*/
+@media screen and (min-width: 1200px){
+    div.question-box{
+        display: flex;
+    }
+    .cont-2 h3{
+        border-top: 0px solid;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .cont-3 h3{
+        border-top: 0px solid;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .cont-1 h3{
+        margin-bottom: 2.8rem;
+        font-size: 1.5rem;
+    }
+    article p{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    article.food-3{
+        margin-top: 1rem;
+    }
+}
+/*== contact style ==*/
+@media screen and (min-width: 1200px){
+    .contact p{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+
+
 
 
 
